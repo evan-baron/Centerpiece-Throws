@@ -1,0 +1,191 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+  position: relative;
+  background: rgb(30, 30, 30);
+  margin: 20px 50px;
+  padding: 0;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Calibri';
+  color: white;
+}
+
+/* Header / Nav Bar */
+
+header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    box-shadow: 2px 2px 20px black;
+    z-index: 3;
+  }
+
+  .header-text {
+    position: absolute;
+    bottom: 52px;
+    left: 12px;
+    font-size: 64px;
+    font-family: 'Edwardian Script ITC';
+    font-weight: bold;
+  }
+  
+  .header-text a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .banner-img {
+    width: 1000px;
+    height: auto;
+  }
+
+  /* Nav Styles */
+
+nav {
+  position: relative;
+  text-align: center;
+  margin-top: -4px;
+}
+
+nav ul {
+  font-size: 0px;
+  /* removes the spaces inbetween the nav buttons */
+  margin: 0px;
+  padding: 0px;
+  /* removes the margin and padding to keep all the buttons centered */
+  background:rgb(30, 30, 30);
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: 'Calibri';
+  padding: 10px 40px;
+  background: rgb(30, 30, 30);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#left-nav-button {
+  border-left: 1px solid black;
+}
+
+#right-nav-button {
+  border-right: 1px solid black;
+}
+
+.dropbtn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  z-index: 3;
+}
+
+.dropdown {
+  display: none;
+  text-align: left;
+  position: absolute;
+  box-shadow: 2px 2px 20px black;
+  z-index: 2;
+}
+
+.dropdown li {
+  display: block;
+  text-align: left;
+}
+
+.dropdown li a {
+  font-size: 16px;
+  text-align: left;
+  width: 100px;
+}
+
+nav li a:hover {
+  background: rgb(100, 100, 100);
+  transition: .3s;
+}
+
+nav li:hover .dropdown {
+  display: block;
+}
+
+/* About Us Section */
+
+main {
+    box-shadow: 2px 2px 20px black;
+    margin: 20px 0px;
+}
+
+.about-us {
+    margin: 20px;
+}
+
+.description {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Edwardian Script ITC';
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    padding: 20px;
+    /* border: 1px solid white; */
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+    gap: 50px;
+    padding: 20px;
+    /* border: 1px solid white; */
+    /* box-shadow: inset 2px 2px 20px black; */
+}
+
+.personal-title {
+    font-size: 36px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+}
+
+.personal-image {
+    float: left;
+    height: 200px;
+    width: auto;
+    padding: 5px 20px 5px 5px;
+    background-color:rgb(30, 30, 30)
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 1000px;
+    box-shadow: 2px 2px 20px black;
+}
