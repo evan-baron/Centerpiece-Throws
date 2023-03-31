@@ -155,6 +155,7 @@ main {
 
 .content {
     display: grid;
+    width: 1000px;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     grid-auto-rows: auto;
