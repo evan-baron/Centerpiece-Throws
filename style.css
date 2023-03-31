@@ -139,11 +139,10 @@ main {
 
 .description {
     text-align: center;
-    font-size: 1.25vw;
 }
 
 .section-title {
-    font-size: 4vw;
+    font-size: 48;
     text-align: center;
     font-family: 'Edwardian Script ITC';
     padding: 20px;
@@ -173,12 +172,8 @@ main {
     /* box-shadow: inset 2px 2px 20px black; */
 }
 
-.personal-content {
-    font-size: 1.25vw;
-}
-
 .personal-title {
-    font-size: 3vw;
+    font-size: 36;
     font-weight: bold;
     border-bottom: 1px solid white;
 }
