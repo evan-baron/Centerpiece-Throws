@@ -14,13 +14,12 @@ html {
 body {
   position: relative;
   background: rgb(30, 30, 30);
-  margin: 20px 50px;
+  margin: 20px 0px;
   padding: 0;
-  width: 1000px;
+  width: 64rem;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Calibri';
-  font-size: 1rem;
   color: white;
 }
 
@@ -30,14 +29,18 @@ header {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    width: 100%;
     box-shadow: 2px 2px 20px black;
     z-index: 3;
   }
 
+  .img-container {
+    position: relative;
+  }
+
   .header-text {
     position: absolute;
-    bottom: 52px;
+    bottom: 12px;
     left: 12px;
     font-size: 4rem;
     font-family: 'Edwardian Script ITC';
@@ -50,7 +53,8 @@ header {
   }
   
   .banner-img {
-    width: 1000px;
+    position: relative;
+    width: 100%;
     height: auto;
   }
 
@@ -59,7 +63,7 @@ header {
 nav {
   position: relative;
   text-align: center;
-  margin-top: -4px;
+  margin-top: -.25rem;
 }
 
 nav ul {
@@ -117,9 +121,9 @@ nav li a {
 }
 
 .dropdown li a {
-  font-size: 1rem;
+  font-size: 16px;
   text-align: left;
-  width: 100px;
+  width: 6.25rem;
 }
 
 nav li a:hover {
@@ -152,14 +156,14 @@ main {
     font-family: 'Edwardian Script ITC';
     padding: 20px;
     border-bottom: 1px solid white;
-    width: 500px;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .content {
+    width: auto;
     display: grid;
-    width: 1000px;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     grid-auto-rows: auto;
@@ -179,14 +183,14 @@ main {
 }
 
 .personal-title {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: bold;
     border-bottom: 1px solid white;
 }
 
 .personal-image {
     float: left;
-    height: 200px;
+    height: 12.5rem;
     width: auto;
     padding: 5px 20px 5px 5px;
     background-color:rgb(30, 30, 30)
@@ -196,7 +200,48 @@ footer {
     display: grid;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 1000px;
+    height: 2.5rem;
+    width: 100%;
     box-shadow: 2px 2px 20px black;
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        width: 360px;
+    }
+
+    header {
+        width: 360px;
+    }
+
+    .header-text {
+        font-size: 2rem;
+    }
+
+    .banner-img {
+        width: 360px;
+        height: auto;
+    }
+
+    .section-title {
+        width: 300px;
+    }
+
+    .content {
+        width: 360px;
+    }
+
+    footer {
+        width: 360px;
+    }
+
+    nav li a {
+        font-size: .5rem;
+        padding: 4px 12px;
+    }
+
+    .personal-image {
+        height: 4rem;
+    }
+
 }
