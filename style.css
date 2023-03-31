@@ -205,7 +205,7 @@ footer {
     box-shadow: 2px 2px 20px black;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 720px) {
     body {
         width: 360px;
     }
@@ -224,11 +224,12 @@ footer {
     }
 
     .section-title {
+      font-size: 2rem;
         width: 300px;
     }
     
     .personal-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .content {
