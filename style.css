@@ -79,7 +79,7 @@ nav li {
   display: inline-block;
 }
 
-nav li a {
+nav li {
   display: inline-block;
   position: relative;
   color: white;
@@ -90,6 +90,7 @@ nav li a {
   background: rgb(30, 30, 30);
   border-left: 1px solid black;
   border-right: 1px solid black;
+  cursor: pointer;
 }
 
 #left-nav-button {
